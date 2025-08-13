@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  api:
+    build:
+      context: .
+      dockerfile: app/Dockerfile
+    image: obs-demo-api:local
+    environment:
+      SERVICE_NAME: obs-demo-api
+      # For now, no collector locally; spans go to console
+      # OTEL_EXPORTER_OTLP_ENDPOINT: "http://otel-collector:4318"
+    ports:
+      - "8080:8080"

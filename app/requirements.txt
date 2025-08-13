@@ -1,0 +1,16 @@
+fastapi==0.112.1
+uvicorn[standard]==0.30.6
+prometheus-client==0.20.0
+
+# OpenTelemetry core + FastAPI/Requests
+opentelemetry-sdk==1.27.0
+opentelemetry-api==1.27.0
+opentelemetry-instrumentation==0.48b0
+opentelemetry-instrumentation-fastapi==0.48b0
+opentelemetry-instrumentation-asgi==0.48b0
+opentelemetry-instrumentation-requests==0.48b0
+opentelemetry-exporter-otlp==1.27.0
+
+# logging helpers
+structlog==24.4.0
+python-json-logger==2.0.7
